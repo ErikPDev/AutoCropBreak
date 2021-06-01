@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/ErikPDev/AutoCropBreak
+build-by-default: true
+branches:
+- main
+projects:
+  AutoCropBreak:
+    path: ""
+    icon: "assets/icon.png"
+
+...
