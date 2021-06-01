@@ -1,5 +1,6 @@
 ---
 name: AutoCropBreak
+author: ErikPDev
 version: 0.0.1
 main: ErikPDev\AutoCropBreak\Main
 api: 3.0.0
