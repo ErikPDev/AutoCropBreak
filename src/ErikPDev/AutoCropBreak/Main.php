@@ -38,7 +38,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\block\{
     Sugarcane,
     Cactus,
-    Air
+    Air,
+    Water
 };
 class Main extends PluginBase implements Listener{
     private $base;
@@ -49,7 +50,7 @@ class Main extends PluginBase implements Listener{
     }
 
     public function onGrow(\pocketmine\event\block\BlockGrowEvent $event){
-        // if(!$event->getNewState() instanceof Sugarcane){return;}
+        if($event->getNewState() instanceof Water){return;}
         $MaxGrowBlocks = $this->getConfig()->get("MaxGrowBlocks");
         $X = $event->getBlock()->asPosition()->x;
         $Y = (int) $event->getBlock()->asPosition()->y;
